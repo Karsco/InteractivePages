@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page with form</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="homeStyles.css" />	
+	<script src="formFunctions.js" type="text/javascript" language="javascript"></script>
+	<script src="homeFunctions.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="banner">
+			<h1>Contact form with validation</h1>
+		</div>
+		<div id="navbar">
+			<ul>
+				<li class="links activeLink"><a href="index.html">Home</a></li>
+				<li class="links"><a href="contact.html">Contact</a></li>
+				<li>
+					<ul id="litNumNavList" class="links">
+						<li id="litNum1" class="show"><a href="literacyNumeracy.html">Lit-Num</a></li>
+						<li id="litNum2" class="subLink"><a href="#">Literacy</a></li>
+						<li id="litNum3" class="subLink"><a href="#">Numeracy</a></li>
+					</ul>	
+				</li>				
+			</ul>
+		</div>
+		<div id="main">
+			Home Page
+			<div id="ExpandingList" class="ELContainer">
+				<div id="EL1Title" class="ELTitle ELBlue" onclick="expandItem(1);">Anne Powell</div>
+				<div id="EL1Content" class="ELContent">Text in expanding part of list to be replaced</div>
+				<div id="EL2Title" class="ELTitle ELGreen" onclick="expandItem(2);">Penny Modena</div>	
+				<div id="EL2Content" class="ELContent">Text in expanding part of list</div>
+				<div id="EL3Title" class="ELTitle" onclick="expandItem(3);">Brenda Smith</div>		
+				<div id="EL3Content" class="ELContent">Text in expanding part of list</div>							
+			</div>
+		</div>
+		<div id="footer">
+			<script>showFooterInfo();</script>
+		</div>
+	</div>
+</body>
+</html>	

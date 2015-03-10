@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page with form</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="homeStyles.css" />	
+	<script src="formFunctions.js" type="text/javascript" language="javascript"></script>
+	<script src="homeFunctions.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="banner">
+			<h1>Contact form with validation</h1>
+		</div>
+		<div id="navbar">
+			<ul>
+				<li class="links"><a href="index.html">Home</a></li>
+				<li class="links activeLink"><a href="contact.html">Contact</a></li>
+				<li>
+					<ul id="litNumNavList" class="links">
+						<li id="litNum1" class="show"><a href="literacyNumeracy.html">Lit-Num</a></li>
+						<li id="litNum2" class="subLink"><a href="#">Literacy</a></li>
+						<li id="litNum3" class="subLink"><a href="#">Numeracy</a></li>
+					</ul>	
+				</li>				
+			</ul>
+		</div>
+		<div id="main">
+			<form name="contactForm" action="" method="post" onsubmit="validateForm()">
+				Contact form <br />
+				Name: <input name="customerName" type="text" value="Enter your name here" onfocus="clearText(this)" /><br />
+				Email: <input name="email" type="text" value="Enter your email address here" onfocus="clearText(this)" /><br />
+				Address Line 1: <input name="address1" type="text" value="Enter the first line of your address here" onfocus="clearText(this)" size="100" /><br />
+				Town: <input name="town" type="text" value="Enter town here" onfocus="clearText(this)" /><br />
+				Phone number: <input name="phoneNum" type="text" value="Enter your phone number here" onfocus="clearText(this)" /><br />
+				<input type="image" src="images/ShinyGreenButton.png" alt="Submit" />
+			</form>
+		</div>
+		<div id="footer">
+			<script>showFooterInfo();</script>
+		</div>
+	</div>	
+</body>
+</html>	

@@ -1,0 +1,143 @@
+#container{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	color:black;
+	font-family:calibri sans-serif;
+	font-size:14pt;
+}
+
+#banner{
+	width:960px;
+	padding:20px;
+	background-color:gray;
+	text-align:center;
+	margin:0px;
+}
+
+#navbar{
+	width:1000px;
+	height:50px;
+	position:relative;
+	top:-20px;
+	margin-top:0px;
+	background-color:black;
+	color:white;
+}
+
+#main{
+	width:1000px;
+}
+
+#footer{
+	width:1000px;
+	background-color:gray;
+	font-size:0.7em;
+	text-align:right;
+}
+
+.links{	
+	float:left;
+	position:relative;
+	top:10px;
+	width:150px;
+	height:30px;
+	padding-top:10px;
+	list-style-type:none;
+	background-image:url('images/linkItem.png');
+	text-align:center;
+	margin-left:10px;
+	color:white;
+}
+
+.activeLink{
+	background-image:url('images/activeItem.png');
+	font-weight:bold;
+	font-size:1.1em;
+	color:black;
+}	
+
+a:link {
+	font-size:1em;
+	font-weight:normal;
+	text-decoration:none;
+	color:inherit;
+}
+
+a:visited{
+	font-size:1em;
+	font-weight:normal;
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover{
+	font-weight:bold;
+	font-size:1.2em;
+	color:inherit;
+}
+
+a:active{
+
+}
+
+/* Explanding list on home page */
+
+#ExpandingList{
+	clear:both;
+}
+	
+.ELTitle, .ELContent, .ELContainer{
+	width:600px;
+}
+
+.ELTitle{
+	height:20px;
+	cursor:pointer;
+	vertical-align:middle;
+	text-align:center;
+	background-color:gray;
+}
+
+.ELContent{
+	height:0px;
+	overflow:auto;
+	display:none;
+	font-size:11pt;
+}
+
+.ELContainer{
+	border:solid 2px #000000;
+}
+
+.ELBlue{
+	background-color:blue;
+}
+
+.ELGreen{
+	background-color:green;
+}
+
+/* Drop down menus in navigation bar */
+
+#litNumNavList{
+	list-style-type:none;
+	width:150px;
+}	
+
+.subLink{
+	display:none;
+	width:150px;
+	height:0px;
+	list-style-type:none;
+	text-align:center;
+	position:relative;
+	top:-10px;
+	padding-top:10px;
+	background-image:url('images/linkItem.png');
+	color:white;
+}
+
+.show{
+	height:30px;
+}
